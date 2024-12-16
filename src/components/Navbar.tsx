@@ -9,11 +9,11 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex justify-center items-center space-x-3 lg:space-x-20 ">
               <div className="flex-shrink-0">
-                <a href="/" className="flex items-center">
+                <span className="flex items-center">
                   <span className="text-2xl font-semibold text-gray-900 dark:text-white tracking-tight">
                     JSON <span className="text-green-600">Placeholder</span>
                   </span>
-                </a>
+                </span>
               </div>
             </div>
           </div>

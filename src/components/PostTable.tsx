@@ -106,13 +106,13 @@ const PostTable: React.FC = () => {
 
   return (
     <>
-      <Button
-        type="primary"
+      <button
+        className="bg-gradient-to-r mb-8 from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 focus:ring-4 focus:ring-green-300 text-white font-semibold text-sm rounded-lg px-6 py-2 shadow-lg transform transition-transform duration-150 ease-in-out hover:scale-105 focus:scale-100 active:scale-95 dark:from-green-700 dark:to-green-800 dark:hover:from-green-800 dark:hover:to-green-900 dark:focus:ring-green-900"
         onClick={() => openModal("add")}
-        style={{ marginBottom: 16 }}
       >
         Add Post
-      </Button>
+      </button>
+
       <Table
         dataSource={posts}
         columns={columns}

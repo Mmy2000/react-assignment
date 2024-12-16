@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import { Layout } from 'antd';
+import PostTable from './components/PostTable';
+import PostForm from './components/PostForm';
 
-function App() {
-  const [count, setCount] = useState(0)
+const { Header, Content } = Layout;
 
+const App: React.FC = () => {
   return (
-    <>
+    <Layout style={{ minHeight: '100vh' }}>
+      <Header style={{ color: 'white', fontSize: '20px' }}>React Assignment</Header>
+      <Content style={{ padding: '20px' }}>
+        <PostForm />
+        <PostTable />
+      </Content>
+    </Layout>
+  );
+};
 
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-
-    </>
-  )
-}
-
-export default App
+export default App;

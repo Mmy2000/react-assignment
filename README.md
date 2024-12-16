@@ -25,6 +25,7 @@ This project is a React-based web application designed to manage posts using Typ
 
 ## Code Structure
 
+```bash
 react-crud-app/
 ├── src/
 │   ├── components/
